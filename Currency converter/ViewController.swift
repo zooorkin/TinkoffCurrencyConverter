@@ -56,7 +56,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func goto(from: String, to: String){
-        if let fromIndex = currencies.index(of: from), let toIndex = currencies.index(of: to){
+        if let fromIndex = currencies.firstIndex(of: from), let toIndex = currencies.firstIndex(of: to){
         pickerFrom.selectRow(fromIndex, inComponent: 0, animated: true)
         pickerTo.selectRow(toIndex, inComponent: 0, animated: true)
         self.requestCurrentCurrencyRate()
@@ -97,7 +97,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         self.retrieveCurrencyRate(baseCurrency: baseCurrency, toCurrency: toCurrency){ [weak self] (value) in
             DispatchQueue.main.async(execute:{
                 if let strongSelf = self{
-                    strongSelf.label.text = value
+                    if let number = Double(value) {
+                        strongSelf.label.text = String(Double(Int(100*number))/100)
+                    } else {
+                        strongSelf.label.text = "..."
+                    }
+                    
                     strongSelf.activityIndicator.stopAnimating()
                 }
             })
@@ -153,7 +158,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
 
     func requestCurrencyRates(baseCurrency: String, parseHandler: @escaping (Data?, Error?)-> Void){
-        let url = URL(string: "https://api.fixer.io/latest?base=" + baseCurrency)!
+        let url = URL(string: "https://api.exchangeratesapi.io/latest?base=" + baseCurrency)!
         let dataTask = URLSession.shared.dataTask(with: url){
             (dataRecieved, response, error) in
             parseHandler(dataRecieved, error)
@@ -162,7 +167,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     func requestCurrencies(parseHandler: @escaping (Data?, Error?)-> Void){
-        let url = URL(string: "https://api.fixer.io/latest")!
+        let url = URL(string: "https://api.exchangeratesapi.io/latest")!
         let dataTask = URLSession.shared.dataTask(with: url){
             (dataRecieved, response, error) in
             parseHandler(dataRecieved, error)

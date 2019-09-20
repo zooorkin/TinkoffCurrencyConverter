@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,13 +40,13 @@
                                         </constraints>
                                     </pickerView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lS-6n-9Ai">
-                                        <rect key="frame" x="96" y="211.33333333333334" width="20" height="38.666666666666657"/>
+                                        <rect key="frame" x="96" y="211.00000000000003" width="20" height="38.666666666666657"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-dd-ipL">
-                                        <rect key="frame" x="0.0" y="211.33333333333334" width="16" height="38.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="211.00000000000003" width="16" height="38.666666666666657"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="16" id="P9d-7T-euY"/>
                                         </constraints>
@@ -58,13 +58,13 @@
                                         <rect key="frame" x="24.000000000000007" y="122.33333333333334" width="63.999999999999993" height="216.00000000000003"/>
                                     </pickerView>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="a2F-Jx-iOz">
-                                        <rect key="frame" x="128.33333333333334" y="211.66666666666666" width="37" height="37"/>
+                                        <rect key="frame" x="127.33333333333334" y="211.66666666666666" width="37" height="37"/>
                                     </activityIndicatorView>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="arA-Hh-fsw">
                                         <rect key="frame" x="200" y="220.33333333333334" width="20" height="20"/>
                                     </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="71.506" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z22-FI-4gQ">
-                                        <rect key="frame" x="124" y="211.33333333333334" width="100" height="38.666666666666657"/>
+                                        <rect key="frame" x="124" y="211.00000000000003" width="100" height="38.666666666666657"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="ZUF-rX-Scg"/>
                                         </constraints>
@@ -165,6 +165,7 @@
                             <constraint firstItem="8xe-ni-U8T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="SK8-5k-4Uj"/>
                             <constraint firstItem="f6t-y2-Hqa" firstAttribute="leading" secondItem="l9V-dm-weS" secondAttribute="trailing" constant="32" id="VHg-6k-u1I"/>
                             <constraint firstItem="Lzf-b6-tyr" firstAttribute="top" secondItem="f6t-y2-Hqa" secondAttribute="bottom" constant="8" id="YUY-DU-uhz"/>
+                            <constraint firstItem="WV5-hD-OvZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3JZ-Q0-b2p" secondAttribute="trailing" constant="8" id="att-Yp-DMS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6t-y2-Hqa" secondAttribute="trailing" constant="8" id="gho-YB-31o"/>
                             <constraint firstItem="f6t-y2-Hqa" firstAttribute="top" secondItem="AAD-II-Wku" secondAttribute="bottom" constant="16" id="nKz-tK-WTp"/>
                             <constraint firstItem="Lzf-b6-tyr" firstAttribute="top" secondItem="3JZ-Q0-b2p" secondAttribute="bottom" constant="32" id="nhX-jK-o3N"/>
@@ -172,6 +173,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lzf-b6-tyr" secondAttribute="bottom" constant="8" id="p9B-KJ-Bvo"/>
                             <constraint firstItem="3JZ-Q0-b2p" firstAttribute="leading" secondItem="8xe-ni-U8T" secondAttribute="trailing" constant="32" id="rCD-4v-bux"/>
                             <constraint firstItem="Lzf-b6-tyr" firstAttribute="top" secondItem="WV5-hD-OvZ" secondAttribute="bottom" constant="32" id="to6-Yc-A0n"/>
+                            <constraint firstItem="l9V-dm-weS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="WV5-hD-OvZ" secondAttribute="trailing" constant="8" id="uH7-ry-Q60"/>
                             <constraint firstItem="AAD-II-Wku" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="wcG-np-FxX"/>
                             <constraint firstItem="Lzf-b6-tyr" firstAttribute="top" secondItem="l9V-dm-weS" secondAttribute="bottom" constant="32" id="wvg-Vr-dRE"/>
                             <constraint firstItem="3JZ-Q0-b2p" firstAttribute="top" secondItem="frK-n3-Bls" secondAttribute="bottom" constant="32" id="y1W-oM-b7D"/>
