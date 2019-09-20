@@ -4,7 +4,7 @@
 Конкурсная работа для поступления в Тинькофф Финтех Школу в 2018 году.
 
 <p align="left">
-<img width="300" src="https://github.com/zooorkin/TinkoffCurrencyConverter/blob/master/Currency converter/pictures/screenshot.png">
+<img width="300" src="https://raw.githubusercontent.com/zooorkin/TinkoffCurrencyConverter/master/pictures/screenshot.png">
 </p>
 
 ## Автор
