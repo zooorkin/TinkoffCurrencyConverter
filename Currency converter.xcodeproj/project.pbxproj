@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8832045B23353EEA0020CB54 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 8832045A23353EEA0020CB54 /* screenshot.png */; };
+		8832045D23353EF90020CB54 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8832045C23353EF90020CB54 /* README.md */; };
 		88CF8B32202D9F4600410BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF8B31202D9F4600410BDA /* AppDelegate.swift */; };
 		88CF8B34202D9F4600410BDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88CF8B33202D9F4600410BDA /* ViewController.swift */; };
 		88CF8B37202D9F4600410BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88CF8B35202D9F4600410BDA /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8832045A23353EEA0020CB54 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		8832045C23353EF90020CB54 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		88CF8B2E202D9F4600410BDA /* Currency converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88CF8B31202D9F4600410BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88CF8B33202D9F4600410BDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8832045923353EEA0020CB54 /* pictures */ = {
+			isa = PBXGroup;
+			children = (
+				8832045A23353EEA0020CB54 /* screenshot.png */,
+			);
+			path = pictures;
+			sourceTree = SOURCE_ROOT;
+		};
 		88CF8B25202D9F4600410BDA = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +72,8 @@
 				88CF8B38202D9F4600410BDA /* Assets.xcassets */,
 				88CF8B3A202D9F4600410BDA /* LaunchScreen.storyboard */,
 				88CF8B3D202D9F4600410BDA /* Info.plist */,
+				8832045C23353EF90020CB54 /* README.md */,
+				8832045923353EEA0020CB54 /* pictures */,
 			);
 			path = "Currency converter";
 			sourceTree = "<group>";
@@ -126,7 +140,9 @@
 			files = (
 				88CF8B3C202D9F4600410BDA /* LaunchScreen.storyboard in Resources */,
 				88CF8B39202D9F4600410BDA /* Assets.xcassets in Resources */,
+				8832045D23353EF90020CB54 /* README.md in Resources */,
 				88CF8B37202D9F4600410BDA /* Main.storyboard in Resources */,
+				8832045B23353EEA0020CB54 /* screenshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
